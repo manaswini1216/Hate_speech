@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-
-from predictor import predict_text
+from backend.predictor import predict_text
 import os
 import json
 from datetime import datetime
