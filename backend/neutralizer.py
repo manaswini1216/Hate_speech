@@ -1,6 +1,8 @@
 from google import genai
 
-client = genai.Client(api_key="AIzaSyDJ4BITIcCnTNF4_OCp8rtwiBvYJvxvjaU")
+import os
+
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 cache = {}
 def neutralize_text(text):
 
