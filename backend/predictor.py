@@ -4,12 +4,13 @@ import nltk
 from nltk.corpus import stopwords
 from backend.neutralizer import neutralize_text
 # ---------------- LOAD FILES ---------------- #
+import os
 
-model = pickle.load(open(r"c:\Users\Manaswini\Downloads\project\hate_speech\backend\hate_speech_model.pkl", "rb"))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-vectorizer = pickle.load(open(r"c:\Users\Manaswini\Downloads\project\hate_speech\backend\tfidf_vectorizer.pkl", "rb"))
-
-toxic_words = pickle.load(open(r"c:\Users\Manaswini\Downloads\project\hate_speech\backend\toxic_words.pkl", "rb"))
+model = pickle.load(open(os.path.join(BASE_DIR, "hate_speech_model.pkl"), "rb"))
+vectorizer = pickle.load(open(os.path.join(BASE_DIR, "tfidf_vectorizer.pkl"), "rb"))
+toxic_words = pickle.load(open(os.path.join(BASE_DIR, "toxic_words.pkl"), "rb"))
 
 # ---------------- CLEAN TOXIC WORDS ---------------- #
 
