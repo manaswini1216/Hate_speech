@@ -1,8 +1,9 @@
 fastapi
 uvicorn
-numpy
 scikit-learn
-scipy
 nltk
+numpy
 pydantic
+google-genai
+streamlit
 requests
