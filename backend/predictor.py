@@ -2,7 +2,7 @@ import pickle
 import re
 import nltk
 from nltk.corpus import stopwords
-from neutralizer import neutralize_text
+from backend.neutralizer import neutralize_text
 # ---------------- LOAD FILES ---------------- #
 
 model = pickle.load(open(r"c:\Users\Manaswini\Downloads\project\hate_speech\backend\hate_speech_model.pkl", "rb"))
