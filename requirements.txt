@@ -1,7 +1,9 @@
 fastapi
 uvicorn
-scikit-learn
+scikit-learn==1.7.1
 nltk
 numpy
 pydantic
 google-genai
+requests
+streamlit
